@@ -1,3 +1,6 @@
+// Do not remove the include below
+#include "main.h"
+
 // testshapes demo for Adafruit RGBmatrixPanel library.
 // Demonstrates the drawing abilities of the RGBmatrixPanel library.
 // For 32x32 RGB LED matrix:
@@ -12,7 +15,7 @@
 
 // If your 32x32 matrix has the SINGLE HEADER input,
 // use this pinout:
-#define CLK 8 // MUST be on PORTB! (Use pin 11 on Mega)
+#define CLK 11 // MUST be on PORTB! (Use pin 11 on Mega)
 #define OE 9
 #define LAT 10
 #define A A0
@@ -40,10 +43,11 @@ char velout[2]; //Ausgabe für 2-Stellige Geschwindigkeit
 void setup()
 {
 
-  //  Serial.begin(9600);
-  //  Serial.print("Program started\n"); // die serial Print befehle und zu viele matrix.println
+  Serial.begin(9600);
+  Serial.print("Program started\n"); 
+  // die serial Print befehle und zu viele matrix.println
   // befehle führen zu Punkten auf dem Display
-  //  delay(2000);// Give reader a chance to see the output.
+  delay(2000);// Give reader a chance to see the output.
 
   pinMode(RADAR_IN, INPUT);
   pinMode(RADAR_OUT, OUTPUT);
