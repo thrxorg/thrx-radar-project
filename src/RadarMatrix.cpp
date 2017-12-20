@@ -7,8 +7,7 @@
 // for Adafruit Industries.
 // BSD license, all text above must be included in any redistribution.
 
-#include <Adafruit_GFX.h>   // Core graphics library
-#include <RGBmatrixPanel.h> // Hardware-specific library
+#include <RadarMatrix.h>
 
 // If your 32x32 matrix has the SINGLE HEADER input,
 // use this pinout:
@@ -40,8 +39,8 @@ char velout[2]; //Ausgabe für 2-Stellige Geschwindigkeit
 void setup()
 {
 
-  //  Serial.begin(9600);
-  //  Serial.print("Program started\n"); // die serial Print befehle und zu viele matrix.println
+    // Serial.begin(9600);
+    // Serial.print("Program started\n"); // die serial Print befehle und zu viele matrix.println
   // befehle führen zu Punkten auf dem Display
   //  delay(2000);// Give reader a chance to see the output.
 
