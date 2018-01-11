@@ -11,7 +11,7 @@
 
 // If your 32x32 matrix has the SINGLE HEADER input,
 // use this pinout:
-#define CLK 8 // MUST be on PORTB! (Use pin 11 on Mega)
+#define CLK 11 // MUST be on PORTB! (Use pin 11 on Mega)
 #define OE 9
 #define LAT 10
 #define A A0
@@ -29,7 +29,7 @@ RGBmatrixPanel matrix(A, B, C, D, CLK, LAT, OE, false);
 */
 #define TRIGGER_IN A5
 #define TRIGGER_LEVEL 30 // 30 empfindlicher, 10 keine Reaktion
-#define RADAR_IN 11
+#define RADAR_IN 2
 #define RADAR_OUT 13
 #define SCANS 8
 int trigger, vmax;
