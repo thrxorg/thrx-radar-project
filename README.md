@@ -45,7 +45,6 @@ Ausgang eingestellt auf 5V --> Display
 
 -----------------------
 
-hatte gestern noch nicht die Links verschickt:
 
 PWM Einstellungen:
 https://playground.arduino.cc/Main/TimerPWMCheatsheet
